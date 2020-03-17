@@ -1,0 +1,16 @@
+@import '../../../styles/settings.scss';
+
+.technology {
+  .start {
+    margin-top: -100px;
+    height: 100px;
+    width: 100%;
+    background: $background;
+    z-index: 111;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+
+  .wrapper {
+    height: 300px;
+  }
+}

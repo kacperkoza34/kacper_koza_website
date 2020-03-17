@@ -8,4 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 22;
+
+  .wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

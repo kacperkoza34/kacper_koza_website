@@ -1,38 +1,53 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './Hero.module.scss';
-import { ReactComponent as Icon } from './Icon.svg';
+import { ReactComponent as Animation } from './Animation.svg';
 import gsap from 'gsap';
 
 function Hero() {
-  const wrapper = useRef(null);
+  const animation = useRef(null);
+  const title = useRef(null);
+  const laser = useRef(null);
 
   useEffect(() => {
-    const [elements] = wrapper.current.children;
+    const [elements] = animation.current.children;
+    const titleAnimation = title.current.children;
 
-    const message1 = elements.querySelectorAll('.message1');
-    const message2 = elements.querySelectorAll('.message2');
-    const message3 = elements.querySelectorAll('.message3');
+    const sticks = elements.querySelectorAll('.stick');
+    const startSticks = elements.querySelectorAll('.stickStart');
+    const bulbs = elements.querySelectorAll('.bulb');
+    const background = elements.querySelectorAll('.background');
+    const clouds = elements.querySelectorAll('.cloud');
 
-    const textM1 = elements.querySelectorAll('.text1');
-    const textM2 = elements.querySelectorAll('.text2');
-    const textM3 = elements.querySelectorAll('.text3');
-
-    gsap.set([message1, message2, message3, textM1, textM2, textM3], {autoAlpha: 0});
+    gsap.set([sticks, startSticks, titleAnimation], { autoAlpha: 0});
+    gsap.set([background], { fill: '#222f3e' ,autoAlpha: 0});
+    gsap.set(bulbs, { fill: 'green', autoAlpha: 0});
+    gsap.set(clouds, { fill: 'grey'});
 
     const tl = gsap.timeline({defaults: { ease: 'power3.inOut'}});
+    const tl_2 = gsap.timeline();
 
-    tl.fromTo(message1, { scaleX: 0},{duration: 1 ,scaleX: 1, autoAlpha:1})
-      .fromTo(textM1, { scaleX: 0},{duration: 0.5 ,scaleX: 1, autoAlpha:1})
-      .fromTo(message2, { scaleX: 0,   transformOrigin: '100% 50%'},{duration: 1 ,scaleX: 1, autoAlpha:1})
-      .fromTo(textM2, { scaleX: 0},{duration: 0.5 ,scaleX: 1, autoAlpha:1})
-      .fromTo(message3, { scaleX: 0},{duration: 1 ,scaleX: 1, autoAlpha:1})
-      .fromTo(textM3, { scaleX: 0},{duration: 0.5 ,scaleX: 1, autoAlpha:1});
-  });
+    tl.fromTo(startSticks, { scaleY: 0,   transformOrigin: '100% 0%'},{duration: 1 ,scaleY: 1, autoAlpha:1})
+      .fromTo(sticks, { scaleY: 0,   transformOrigin: '100% 0%'},{duration: 1 ,scaleY: 1, autoAlpha:1}, '-=0.5')
+      .to([bulbs, background], {duration: .3, autoAlpha: 1})
+      .to([bulbs, background], {duration: .2, autoAlpha: 0})
+      .to([bulbs, background], {duration: .1, autoAlpha: 1})
+      .to([bulbs, background], {duration: .2, autoAlpha: 0})
+      .to([bulbs, background], {duration: .1, autoAlpha: 1})
+      .to([bulbs, background], {duration: .2, autoAlpha: 0})
+      .to([bulbs, background], {duration: .4, autoAlpha: 1})
+      .to([bulbs, background], {duration: .8, autoAlpha: 1})
+      .fromTo(titleAnimation, { }, {duration: .8, autoAlpha: 1}, '-=1.2')
+
+  },[]);
 
   return (
     <div className={styles.hero}>
-      <div ref={wrapper} className={styles.wrapper}>
-        <Icon/>
+      <title ref={title} className={styles.title}>
+        <h1>PEKSON - WEB DEVELOPER COŚ TAM COŚ TAM</h1>
+        <button>SKONTAKTUJ SIĘ</button>
+      </title>
+      <div ref={animation} className={styles.animation}>
+        <Animation/>
       </div>
     </div>
   );

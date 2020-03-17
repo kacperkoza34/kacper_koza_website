@@ -1,38 +1,53 @@
 import React from 'react';
 import styles from './Services.module.scss';
+import { iconConfig, servicesDescription } from './ServicesContainer.js';
+import AnimateDescription from './AnimateDescription.js';
 
-function Services() {
-  return (
-    <div className={styles.services}>
-      <div className={styles.wrapper}>
 
-        <title>
-          <h2>Co moge dla Ciebie zrobić?</h2>
-        </title>
+class Services extends React.Component{
+  state = {
+    activeDescription: 'default'
+  }
 
-        <div className={styles.iconBox}>
+  handleOn(id){
+    this.setState({activeDescription:id});
+  }
 
-          <div className={styles.icon}>
+  handleOut(){
+    this.setState({activeDescription:'default'});
+  }
 
+  render(){
+    return (
+      <div className={styles.services}>
+        <div className={styles.wrapper}>
+
+          <title>
+            <h2>Co moge dla Ciebie zrobić?</h2>
+          </title>
+
+          <div className={styles.iconBox}>
+            { iconConfig.map( ({id, title, iconSrc }) =>(
+              <div
+                   className={styles.singleIcon}
+                   onMouseEnter={() => this.handleOn(id)}
+                   onMouseLeave={() => this.handleOut()}
+              >
+                <div className={styles.icon}>
+                  <img src={iconSrc} alt='ups'/>
+                </div>
+                <h3>{title}</h3>
+              </div>
+            ))
+            }
           </div>
-          <div className={styles.icon}>
-
-          </div>
-          <div className={styles.icon}>
-
-          </div>
-          <div className={styles.icon}>
-
-          </div>
-
-        </div>
-
-        <div className={styles.description}>
-          Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum
-          Lorem impsumLorem impsumLorem impsumLorem impsum Lorem impsumLoremLorem impsum
+          <AnimateDescription
+            id={this.state.activeDescription}
+            active={servicesDescription[this.state.activeDescription]}
+          />
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 export default Services;

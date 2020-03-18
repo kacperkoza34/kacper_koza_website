@@ -1,87 +1,103 @@
-
 @import '../../../styles/settings.scss';
 
 .services {
-  width: 100%;
-  height: 700px;
-  margin-top: -100px;
   position: relative;
   background: url('background.jpg') center no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: -100px 0 0 0;
 
-  .wrapper {
-    margin: 100px 0 0 0;
-    width: 80%;
+  .startServices {
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    background: $background;
+    z-index: 111;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+  }
+
+  .iconWrapper {
+    width: 100%;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    z-index: 22;
 
-    title {
-      margin: 0 0 40px 0;
-      display: block;
-      color: #fff;
-    }
-
-    .iconBox {
+    .wrapper {
       width: 80%;
+      margin-top: -100px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 22;
 
-      .singleIcon {
-        width: 150px;
-        height: 150px;
+      title {
+        margin: 0 0 40px 0;
+        display: block;
+        color: #fff;
+      }
+
+      .iconBox {
+        width: 80%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        justify-content: space-around;
 
-        .icon {
-          width: 100px;
-          height: 100px;
-          border-radius: 100%;
-          border: 6px solid $background;
+        .singleIcon {
+          width: 25%;
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
 
-          img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            border-radius: 80px;
+          .icon {
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            border: 6px solid $background;
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              border-radius: 80px;
+            }
           }
-        }
 
-        .icon:hover {
-          cursor: pointer;
-          border-color: $primary;
-        }
+          .iconActive {
+            cursor: pointer;
+            border-color: $primary;
+          }
 
-        h3 {
-          text-align: center;
-          color: #fff;
-          font-weight: 600;
-        }
+          h3 {
+            text-align: center;
+            color: #fff;
+            font-weight: 600;
+          }
 
+        }
+      }
+
+      .description {
+        height: 200px;
+        padding: 40px;
+        z-index: 22;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        autoAlpha: 0;
       }
     }
+  }
 
-    .description {
-      height: 200px;
-      padding: 40px;
-      z-index: 22;
-      color: #fff;
-      text-align: center;
-      font-weight: 600;
-    }
+  .none {
+    display: none;
   }
 }
 
 .services::after {
   content: "";
-  opacity: 0.6;
+  opacity: 0.75;
   position: absolute;
   top: 0;
   bottom: 0;

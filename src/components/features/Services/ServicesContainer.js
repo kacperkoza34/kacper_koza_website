@@ -1,14 +1,14 @@
 export const servicesDescription = {
-  default: 'Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsumLorem impsumLorem impsumLorem impsum Lorem impsumLoremLorem impsum',
-  design:  'design design design design design design design design design design design design design ',
-  code:   'code code code code code code code code code code code code code code code code code code code ',
-  seo: 'seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo seo ',
-  ssh: 'ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh ssh '
+  default: 'Zajmuje się budową stron internetowych od podstaw',
+  design:  'Oferuje profesjonalne projekty graficzne dopasowane do branży. Wykorzustujemy najnowsze trendy, dzięki temu masz pewność że twoja strona będzie wyglądać profesjonalnie na każdym urządzeniu',
+  code:   'Po przygotowaniu wszystkich materiałów możemy przystąpić do pisania kodu. Kod jest napisany przy wykorzystaniu najnowszych technologi, umożliwia to szybką prace i łatwe wprowadznie zmian w przyszłości. Nasze strony posiadają certyfikat SSH - oznacza to że witryna jest zabezpieczona. Przekłada sie to na lepsze pozycjonowanie',
+  photo: 'Nawet najlepszy design jest mało warty, jeżeli zdjęcia zawarte na stronie są słabej jakości. Zależy nam na jak najlepszym efekcie, dlatego w naszej ofercie znajdziesz stworzenie strony internetowej wraz z sesją zdjęciową. Poza zdjęciami do wykorzystania w internecie otrzymasz od nas fajną pamiątkę uwieczniającą moment w którym znajduje się twoja firma',
+  video: 'Kolejnym ciekawym rozwiązaniem jest zamieszczenie na stronie filmu. Materiał może przedstawiać jak wygląda proces dostarczania produktu lub usługi - po prostu jak pracujecie. Dzięki takiej prezentacji klient pozna lepiej Ciebie i twoją firmę - wyróźnisz się na tle konkurencji'
 };
 
 export const iconConfig = [
-  { id:'design', title: 'Design', iconSrc: 'icons/1.jpeg'},
-  { id:'code', title: 'Programowanie', iconSrc: 'icons/2.jpeg'},
-  { id:'seo',  title: 'Pozycjonowanie', iconSrc: 'icons/3.jpeg'},
-  { id:'ssh',  title: 'Bezpieczeństwo', iconSrc: 'icons/4.jpeg'}
+  { id:'photo', title: 'Fotografia', iconSrc: 'icons/1.jpeg'},
+  { id:'video', title: 'Video', iconSrc: 'icons/2.jpeg'},
+  { id:'design',  title: 'Design', iconSrc: 'icons/3.jpeg'},
+  { id:'code',  title: 'Programowanie', iconSrc: 'icons/4.jpeg'}
 ];

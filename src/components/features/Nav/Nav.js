@@ -11,12 +11,12 @@ class Nav extends React.Component {
 
   componentDidMount(){
     if(window.innerWidth <= 900) this.setState({mobile:true});
-
     window.addEventListener('resize', () =>{
       if(window.innerWidth <= 900) this.setState({mobile:true});
       else this.setState({mobile:false});
     })
   }
+
   render(){
     return (
         <>

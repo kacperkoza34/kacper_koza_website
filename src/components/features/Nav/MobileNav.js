@@ -5,12 +5,11 @@ import { navConfig } from './NavConfig';
 import gsap from 'gsap';
 
 class MobileNav extends React.Component {
-  state = {
-    active: false
-  }
 
-  handler(status){
-    this.setState({active:status});
+  componentDidMount(){
+    window.addEventListener('resize', () =>{
+      this.hideNav();
+    })
   }
 
   displayNav(){
@@ -28,7 +27,6 @@ class MobileNav extends React.Component {
   }
 
   render(){
-    console.log(this.state.active);
     return (
       <div className={styles.mobileNav}>
         <div onClick={() => this.displayNav() }>x</div>
@@ -38,7 +36,7 @@ class MobileNav extends React.Component {
             <div className={styles.wrapper}>
               <div onClick={() => this.hideNav() }>xsss</div>
               {navConfig.map( ({title, link}) =>(
-                <div className={styles.singleLink} key={link}>
+                <div onClick={() => this.hideNav()} className={styles.singleLink} key={link}>
                   <NavLink to={link}>{title}</NavLink>
                 </div>
                 )

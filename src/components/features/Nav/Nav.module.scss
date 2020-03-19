@@ -5,6 +5,10 @@
   color: #fff;
   z-index: 22222;
 
+  .burger {
+    display: none;
+  }
+
   ul {
     height: 60px;
     width: 100%;
@@ -35,11 +39,3 @@
     }
   }
 }
-
-
-// @media (max-width: 900px) {
-//   .nav {
-//
-//     }
-//   }
-// }

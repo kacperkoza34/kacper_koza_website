@@ -1,0 +1,61 @@
+@import '../../../styles/settings.scss';
+
+.mobileNav {
+  color: #fff;
+
+  .mobileList {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    transform: translateX(100vw);
+
+    .wrapper {
+      background: #1e272e;
+      height: 80vh;
+      width: 100vw;
+      z-index: 111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .start {
+      height: 10vh;
+      width: 100vw;
+      background: #1e272e;
+      z-index: 111;
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+
+    .end {
+      height: 10vh;
+      width: 100vw;
+      background: #1e272e;
+      z-index: 111;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+  }
+}
+
+.hidden {
+  animation: hideNav .7s;
+}
+
+@keyframes displayNav {
+  from{width: 0}
+  to{width: 100vw}
+}
+
+@keyframes hideNav {
+  from{height: 100vh;}
+  to{height: 0;}
+}

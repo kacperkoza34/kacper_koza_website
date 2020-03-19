@@ -37,6 +37,13 @@ class MobileNav extends React.Component {
           <div className={styles.start}/>
             <div className={styles.wrapper}>
               <div onClick={() => this.hideNav() }>xsss</div>
+              {navConfig.map( ({title, link}) =>(
+                <div className={styles.singleLink} key={link}>
+                  <NavLink to={link}>{title}</NavLink>
+                </div>
+                )
+               )
+              }
             </div>
           <div className={styles.end}/>
         </div>

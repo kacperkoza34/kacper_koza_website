@@ -2,44 +2,57 @@
 
 .mobileNav {
   color: #fff;
+  display: flex;
+  align-items: center;
 
   .mobileList {
     color: #fff;
     position: fixed;
     top: 0;
+    bottom: 0;
     right: 0;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     z-index: 99999;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
     transform: translateX(100vw);
 
     .wrapper {
-      background: #1e272e;
-      height: 80vh;
+      background: #fff;
+      color: $background;
+      height: 80%;
       width: 100vw;
       z-index: 111;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      .singleLink {
+        margin: 30px;
+
+        a {
+          text-decoration: none;
+          color: $background;
+        }
+      }
     }
 
     .start {
-      height: 10vh;
+      height: 10%;
       width: 100vw;
-      background: #1e272e;
+      background: #fff;
       z-index: 111;
       clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     }
 
     .end {
-      height: 10vh;
+      height: 10%;
       width: 100vw;
-      background: #1e272e;
+      background: #fff;
       z-index: 111;
       clip-path: polygon(100% 0, 0 0, 100% 100%);
     }

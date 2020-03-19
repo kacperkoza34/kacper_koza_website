@@ -40,4 +40,8 @@
     border: 2px solid $primary;
     padding: 18px;
   }
+
+  button:hover {
+    cursor: pointer;
+  }
 }

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './Hero.module.scss';
+
 import { ReactComponent as Animation } from './Animation.svg';
 import gsap from 'gsap';
 

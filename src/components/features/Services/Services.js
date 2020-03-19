@@ -40,8 +40,8 @@ class Services extends React.Component{
   render(){
     return (
       <div className={styles.services}>
-        <div className={styles.iconWrapper}>
-          <div className={styles.wrapper}>
+        <div className={styles.wrapper}>
+          <div className={styles.iconWrapper}>
 
             <title>
               <h2>Co moge dla Ciebie zrobić?</h2>

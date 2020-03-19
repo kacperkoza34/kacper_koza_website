@@ -7,8 +7,8 @@ export const servicesDescription = {
 };
 
 export const iconConfig = [
-  { id:'photo', title: 'Fotografia', iconSrc: 'icons/1.jpeg'},
-  { id:'video', title: 'Video', iconSrc: 'icons/2.jpeg'},
-  { id:'design',  title: 'Design', iconSrc: 'icons/3.jpeg'},
-  { id:'code',  title: 'Programowanie', iconSrc: 'icons/4.jpeg'}
+  { id:'photo', title: 'Fotografia', iconSrc: 'servicesIcons/1.jpeg'},
+  { id:'video', title: 'Video', iconSrc: 'servicesIcons/2.jpeg'},
+  { id:'design',  title: 'Design', iconSrc: 'servicesIcons/3.jpeg'},
+  { id:'code',  title: 'Programowanie', iconSrc: 'servicesIcons/4.jpeg'}
 ];

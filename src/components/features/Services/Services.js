@@ -28,8 +28,11 @@ class Services extends React.Component{
   changeDescription(){
     if(this.state.sliderInterval){
       this.setState({activeDescription:iconConfig[this.state.index].id});
-      if(this.state.index === 3) this.state.index = 0;
-      else this.state.index++;
+      if(this.state.index === 3) this.setState({index: 0});
+      else {
+        const newIndex = this.state.index + 1;
+        this.setState({index: newIndex});
+      }
     }
   }
 
@@ -49,9 +52,9 @@ class Services extends React.Component{
 
             <div className={styles.iconBox}>
               { iconConfig.map( ({id, title, iconSrc }, index) =>(
-                <div className={styles.singleIcon}>
+                <div key={id} className={styles.singleIcon}>
                   <div
-                  className={id == this.state.activeDescription ?
+                  className={id === this.state.activeDescription ?
                      styles.iconActive+' '+styles.icon  : styles.icon}
                     onMouseEnter={() => this.handleOn(id,index)}
                     onMouseLeave={() => this.handleOut()}

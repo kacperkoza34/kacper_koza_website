@@ -10,7 +10,7 @@ const About = () => {
         <h1>{aboutConfig.title}</h1>
         <div className={styles.boxWrapper}>
         { aboutConfig.workers.map( ({subtitle, content, button, workersPhoto}) => (
-              <div className={styles.box}>
+              <div key={workersPhoto} className={styles.box}>
                 <div className={styles.photo}>
                   <img src={workersPhoto} alt={'ups'}/>
                 </div>

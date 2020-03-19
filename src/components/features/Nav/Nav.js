@@ -3,16 +3,27 @@ import styles from './Nav.module.scss';
 import {NavLink} from 'react-router-dom';
 import { navConfig } from './NavConfig';
 
-function Nav() {
-   return (
+class Nav extends React.Component {
+  state = {
+    mobileNav: false
+  }
+  render(){
+    if (window.screen.width <= 900) {
+      console.log(window.screen.width)
+    }
+    return (
       <div className={styles.nav}>
-       <ul> {navConfig.map( ({title, link}) =>(
-          <li>
-            <NavLink to={link} key={link}>{title}</NavLink>
-          </li> )
+        <ul>
+        {navConfig.map( ({title, link}) =>(
+          <li key={link}>
+            <NavLink to={link}>{title}</NavLink>
+          </li>
+          )
          )
         }
-      </ul>
-      </div> );
+        </ul>
+      </div>
+    );
   }
+}
 export default Nav;

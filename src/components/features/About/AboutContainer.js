@@ -2,7 +2,7 @@ export const aboutConfig = {
   title: 'O nas',
   workers: [
     {
-      subtitle: 'Nazywam się Anna Koza',
+      subtitle: 'Nazywam się Kacper Koza',
       content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. re unknown printer to',
       button: 'Zobacz więcej',
       workersPhoto: 'workersPhoto/kacper.jpg'
@@ -11,7 +11,7 @@ export const aboutConfig = {
       subtitle: 'Nazywam się Anna Koza',
       content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. re unknown printer to',
       button: 'Zobacz więcej',
-      workersPhoto: 'workersPhoto/kacper.jpg'
+      workersPhoto: 'workersPhoto/ania.jpg'
     }
   ]
 }

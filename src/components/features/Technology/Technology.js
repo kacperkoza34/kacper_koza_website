@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Technology.module.scss';
 import AnimateIcon from './AnimateIcon.js';
+import { ReactComponent as ReactIcon } from './ReactIcon.svg';
 
 const Technology = () => {
   return (
@@ -12,10 +13,10 @@ const Technology = () => {
         </title>
         <div className={styles.box}>
           <div className={styles.list}>
-            <span>Java Script</span>
+            <span> Java Script</span>
             <span>Html</span>
             <span>Css</span>
-            <span>React</span>
+            <span><ReactIcon/>React</span>
           </div>
           <div className={styles.icon}>
             <AnimateIcon />

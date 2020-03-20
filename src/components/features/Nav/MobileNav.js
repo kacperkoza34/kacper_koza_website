@@ -30,8 +30,7 @@ class MobileNav extends React.Component {
     return (
       <div className={styles.mobileNav}>
         <div onClick={() => this.displayNav() }>x</div>
-
-        <div id={'test'} className={styles.mobileList}>
+        <div id={'test'} onTouchMove={() => this.hideNav()} className={styles.mobileList}>
           <div className={styles.start}/>
             <div className={styles.wrapper}>
               <div onClick={() => this.hideNav() }>xsss</div>

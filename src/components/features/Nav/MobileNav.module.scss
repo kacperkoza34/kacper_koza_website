@@ -5,6 +5,10 @@
   display: flex;
   align-items: center;
 
+  .burger:hover {
+    cursor: pointer;
+  }
+
   .mobileList {
     color: #fff;
     position: fixed;
@@ -12,11 +16,11 @@
     bottom: 0;
     right: 0;
     height: 100vh;
-    width: 60vw;
+    width: 100vw;
     z-index: 99999;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     transform: translateX(100vw);
 
@@ -24,7 +28,7 @@
       background: #fff;
       color: $background;
       height: 100%;
-      width: 100%;
+      width: 60%;
       z-index: 111;
       display: flex;
       justify-content: center;
@@ -47,12 +51,12 @@
   animation: hideNav .7s;
 }
 
-@keyframes displayNav {
-  from{width: 0}
-  to{width: 100vw}
-}
-
-@keyframes hideNav {
-  from{height: 100vh;}
-  to{height: 0;}
+@media (max-width: 450px) {
+  .mobileNav {
+    .mobileList {
+      .wrapper {
+        width: 100%;
+      }
+    }
+  }
 }

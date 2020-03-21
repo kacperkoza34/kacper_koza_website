@@ -80,7 +80,7 @@
     height: 100px;
     width: 100%;
     background: $primary;
-    z-index: 111;
+    z-index: 5;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
 
@@ -90,7 +90,7 @@
     height: 100px;
     width: 100%;
     background: $primary;
-    z-index: 111;
+    z-index: 5;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
   }
 }

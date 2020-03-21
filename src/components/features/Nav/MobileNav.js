@@ -19,12 +19,12 @@ class MobileNav extends React.Component {
 
   displayNav(){
     const tl = gsap.timeline({defaults: { ease: 'power3.inOut'}});
-    tl.to(this.state.nav, {duration: 1 , x: 0, autoAlpha: 1})
+    tl.to(this.state.nav, {duration: .6 , x: 0, autoAlpha: 1})
   }
 
   hideNav(){
     const tl = gsap.timeline({defaults: { ease: 'power3.inOut'}});
-    tl.to(this.state.nav, {duration: 1 , x: 1000, autoAlpha: 1})
+    tl.to(this.state.nav, {duration: .6 , x: 1000, autoAlpha: 1})
   }
 
   render(){

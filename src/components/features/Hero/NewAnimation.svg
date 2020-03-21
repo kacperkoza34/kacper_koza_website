@@ -1,0 +1,24 @@
+<svg width="1920" height="1100" viewBox="0 0 1920 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g  className="allTiles" id="p&#197;&#130;ytki kolor 1">
+<path className='tile' id="tile" d="M105.59 810.55L234.45 884.18L468.33 812.64L330.75 749.36L105.59 810.55Z" fill="white" stroke="black" stroke-miterlimit="10"/>
+<path className='tileGroup1' id="tile_2" d="M395.15 975.23L640.01 889.24L819.81 974.2L572.89 1076.8L395.15 975.23Z" fill="white"/>
+<path className='white' id="tile_3" d="M484.77 809.42L642.14 880.52L843.01 811.73L686.17 749.36L484.77 809.42Z" fill="white"/>
+<path className='tile' id="tile_4" d="M650.57 885.39L832 969.48L1038.37 884.18L854.93 814.94L650.57 885.39Z" fill="white"/>
+<path className='white' id="tile_5" d="M844.47 973.61L1064.51 1074.05L1265.38 973.61L1049.61 889.24L844.47 973.61Z" fill="white"/>
+<path className='white' id="tile_6" d="M701.3 744.31L858.14 804.85L1028.74 744.31L870.52 691.57L701.3 744.31Z" fill="white"/>
+<path className='tile' id="tile_7" d="M740.65 638.81L880 684.54L1028.74 638.99L888.56 598.33L740.65 638.81Z" fill="white"/>
+<path className='white' id="tile_8" d="M888.56 687.6L1045.1 739.57L1193.18 687.27L1036.54 641.43L888.56 687.6Z" fill="white"/>
+<path className='white' id="tile_9" d="M1063.36 884.18L1280.74 965.36L1449.24 883.2L1233.27 811.96L1063.36 884.18Z" fill="white"/>
+<path className='tile' id="tile_10" d="M1054.92 743.17L1239.46 801.64L1382.55 743.17L1203.01 690.5L1054.92 743.17Z" fill="white"/>
+<path className='white' id="tile_11" d="M1285.94 971.05L1456.74 887.45L1707.01 971.78L1548.79 1070.83L1285.94 971.05Z" fill="white"/>
+<path className='white' id="tile_12" d="M1248.41 806.83L1393.33 746.07L1600.92 806.83L1461.81 877.76L1248.41 806.83Z" fill="white"/>
+<path className='white' id="tile_13" d="M1218.73 685.82L1347.46 639.98L1523.8 685.15L1400.43 737.66L1218.73 685.82Z" fill="white"/>
+<path className='tile' id="tile_14" d="M898.04 594.12L1035.62 634.25L1165.17 594.12L1028.74 558.12L898.04 594.12Z" fill="white"/>
+<path className='white' id="tile_15" d="M1041.68 554.53L1179.16 590.45L1295.64 554.68L1157.15 523.27L1041.68 554.53Z" fill="white"/>
+<path className='tileGroup2' id="tile_16" d="M1193.82 593.43L1348.36 633.33L1460.72 593.43L1307.55 558.12L1193.82 593.43Z" fill="white"/>
+<path className='white' id="tile_17" d="M1360.08 636.31L1535.26 681.94L1644.87 636.31L1470.14 595.73L1360.08 636.31Z" fill="white"/>
+<path className='tile' id="tile_18" d="M1548.33 682.86L1654.5 637.69L1852.61 681.94L1748.74 734.68L1548.33 682.86Z" fill="white"/>
+<path className='white' id="tile_19" d="M1755.39 737.89L1859.03 683.78L1920 696.62V781.23L1755.39 737.89Z" fill="white"/>
+<path className='white' id="tile_20" d="M1625.15 803.47L1867.06 873.41L1920 839.24V788.8L1745.07 742.94L1625.15 803.47Z" fill="white"/>
+</g>
+</svg>
